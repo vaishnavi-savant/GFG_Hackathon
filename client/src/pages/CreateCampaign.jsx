@@ -24,21 +24,31 @@ const CreateCampaign = () => {
     setForm({ ...form, [fieldName]: e.target.value })
   }
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-
-    checkIfImage(form.image, async (exists) => {
-      if(exists) {
-        setIsLoading(true)
-        await createCampaign({ ...form, target: ethers.utils.parseUnits(form.target, 18)})
-        setIsLoading(false);
-        navigate('/');
+  
+    checkIfImage(form.image, (exists) => {
+      if (exists) {
+        setIsLoading(true);
+        const campaignData = Object.assign({}, form, { 
+          target: ethers.utils.parseUnits(form.target, 18)
+        });
+        
+        createCampaign(campaignData)
+                  .then(() => {
+            setIsLoading(false);
+            navigate('/');
+          })
+          .catch((error) => {
+            console.log('Error creating campaign:', error);
+          });
       } else {
-        alert('Provide valid image URL')
+        alert('Provide valid image URL');
         setForm({ ...form, image: '' });
       }
-    })
-  }
+    });
+  };
+  
 
   return (
     <div className="bg-[#1c1c24] flex justify-center items-center flex-col rounded-[10px] sm:p-10 p-4">
