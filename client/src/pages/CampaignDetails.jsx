@@ -19,10 +19,17 @@ const CampaignDetails = () => {
   const remainingDays = daysLeft(state.deadline);
 
   const fetchDonators = async () => {
+    if (!state.pId) {
+      console.log('Invalid pId:', state.pId);
+      return;
+    }
+  
     const data = await getDonations(state.pId);
-
     setDonators(data);
   }
+  
+  
+  
 
   useEffect(() => {
     if(contract) fetchDonators();
