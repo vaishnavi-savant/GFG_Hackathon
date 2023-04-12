@@ -12,6 +12,10 @@
   );
 }
 
+.fund-card:hover{
+  scale: 1.05;
+}
+
 input[type="date"]::-webkit-calendar-picker-indicator {
   cursor: pointer;
   filter: invert(0.8);
