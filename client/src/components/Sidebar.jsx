@@ -56,7 +56,7 @@ const Sidebar = () => {
 
           <button
           type="button"
-          className={`font-epilogue font-semibold text-[16px] leading-[26px] text-white min-h-[52px] px-4 rounded-[10px] ${address ? "bg-[#1dc071]" : "bg-[#8c6dfd]"}`}
+          className={`font-epilogue font-semibold w-[15rem] text-[16px] leading-[26px] text-white min-h-[52px] px-4 rounded-[10px] ${address ? "bg-[#1dc071]" : "bg-[#8c6dfd]"}`}
           onClick={() => {
             if (address) navigate("create-campaign");
             else connect();
