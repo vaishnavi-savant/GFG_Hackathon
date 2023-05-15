@@ -1,6 +1,6 @@
 # GFG_Hackathon
 
-# Crowdfunding Platform using Blockchain and Cryptocurrency
+# Crowdfunding Platform using Blockchain Technology and Cryptocurrency
 
 ## Overview
 
