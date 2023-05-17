@@ -4,7 +4,7 @@
 
 ## Overview
 
-This project is a crowdfunding platform developed using blockchain technology to provide complete security and transparency for both Campaign Creators and Investors. Unlike traditional crowdfunding platforms, there is no middleman, and every transaction is fully visible and traceable.Crowdfunding is a way of raising money to finance projects and businesses. It enables fundraisers to collect money from a large number of people via online crowdfunding is a demanding platform in today's technology world.
+This project is a crowdfunding platform developed using blockchain technology to provide complete security and transparency for both Campaign Creators and Investors. Unlike traditional crowdfunding platforms, there is no middleman, and every transaction is fully visible and traceable.Crowdfunding is a way of raising money to finance projects and businesses. It enables fundraisers to collect money from a large number of people via online.
 
 ## Features
 
